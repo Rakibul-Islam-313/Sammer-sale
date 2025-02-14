@@ -1,0 +1,1 @@
+At first click on the product card for select the product that you want to buy. after select the product see on the total price, if total price is 200 tk or above use Promo code for get discount. After enter the code click on the 'apply' button then you see the total paid price after the discount and the last time click on the 'Make Purchase' button to buy these products finally.
