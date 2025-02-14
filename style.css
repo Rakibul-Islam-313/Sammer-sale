@@ -183,17 +183,23 @@ img{
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 24%;
+    width: 26%;
     height: fit-content;
     border-radius: 7px;
 }
+.btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .modal-content > img {
     width: 55%;
-    /* justify-items: center;
-    align-items: center; */
-    margin-left: 55px;
+    margin-left: 70px;
 }
-
+.modal-content > h1 {
+    margin-left: 50px;
+    /* margin-right: auto; */
+}
 .close-class {
     color: #aaaaaa;
     float: right;
@@ -206,10 +212,9 @@ img{
     padding-right: 12px;
     padding-top: 4px;
     padding-bottom: 4px;
-    margin-left: 78px;
+    margin-left: 50px;
+    margin-right: 50px;
     margin-bottom: 10px;
     border-radius: 6PX;
     color: #ffffff;
-    direction: none;
-
 }
