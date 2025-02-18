@@ -1,12 +1,10 @@
 
-
 function CollectNewProductPrice(ProductPriceField){
     const newProductPrice = document.getElementById(ProductPriceField);
     const newProductPriceString = newProductPrice.innerText;
     const newProductPriceValue = parseFloat(newProductPriceString);
     return newProductPriceValue;
 }
-
 function setProductName(setProductName,productName){
     const parentNode = document.getElementById(setProductName);
     const h4 = document.createElement("h4");
@@ -19,7 +17,6 @@ function CollectProductName(name){
     const productName = productTag.innerText;
     return productName;
 }
-
 function setTotalValue(totalValue,newTotalPrice){
     const totalPriceValue = document.getElementById(totalValue);
     totalPriceValue.innerText = newTotalPrice;
@@ -35,6 +32,7 @@ function setTotalValue(totalValue,newTotalPrice){
 document.getElementById("apply-coupon").addEventListener("click",function(){
     const couponField =  document.getElementById("Check-coupon");
     const couponFieldValue = couponField.value;
+    couponField.value = "";
 
     if(couponFieldValue === 'SELL200'){
         const totalPriceField = document.getElementById('price-field');
@@ -63,14 +61,13 @@ document.getElementById("apply-coupon").addEventListener("click",function(){
         if (newTotalPaidPrice > 0){
             const purchaseButton = document.getElementById("Buy_button");
             purchaseButton.removeAttribute("disabled");
-        }
 
+            const applyBtn = document.getElementById("apply-coupon");
+            applyBtn.setAttribute("disabled",true);
+        }
         // console.log(totalPrice);
         // console.log(discountTotalPrice);
         // console.log(newTotalPaidPrice);
-    }
-    else{
-
     }
 })
 
